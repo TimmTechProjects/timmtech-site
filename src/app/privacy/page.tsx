@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — TimmTech",
-  description: "TimmTech LLC privacy policy and data handling practices.",
+  description: "TimmTech Inc. privacy policy and data handling practices.",
 };
 
 export default function PrivacyPolicy() {
@@ -36,7 +36,7 @@ export default function PrivacyPolicy() {
               1. Introduction
             </h2>
             <p>
-              TimmTech LLC (&quot;TimmTech,&quot; &quot;we,&quot; &quot;us,&quot;
+              TimmTech Inc. (&quot;TimmTech,&quot; &quot;we,&quot; &quot;us,&quot;
               or &quot;our&quot;) is committed to protecting your privacy. This
               Privacy Policy explains how we collect, use, disclose, and
               safeguard your information when you visit our website
@@ -157,7 +157,7 @@ export default function PrivacyPolicy() {
       {/* Footer */}
       <footer className="border-t border-card-border bg-card/30">
         <div className="mx-auto max-w-6xl px-6 py-8 text-center text-sm text-muted/60">
-          &copy; {new Date().getFullYear()} TimmTech LLC. All rights reserved.
+          &copy; {new Date().getFullYear()} TimmTech Inc.. All rights reserved.
         </div>
       </footer>
     </div>

@@ -272,9 +272,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-16 grid gap-8 lg:grid-cols-2">
+          <div className="mt-16 grid gap-8 lg:grid-cols-3">
             {/* MyFloralVault */}
-            <div className="card-hover gradient-border group overflow-hidden rounded-2xl border border-card-border bg-card/50 backdrop-blur-sm lg:col-span-2">
+            <div className="card-hover gradient-border group overflow-hidden rounded-2xl border border-card-border bg-card/50 backdrop-blur-sm">
               <Image src="/mfv-preview.jpg" alt="MyFloralVault" width={800} height={420} className="w-full h-48 object-cover rounded-t-2xl" />
               <div className="p-6">
                 <div className="flex items-center gap-3">
@@ -465,7 +465,7 @@ export default function Home() {
               <p className="mt-6 text-base leading-relaxed text-muted">
                 TimmTech was founded by Xavier Timm with a simple idea: build
                 products that solve real problems and ship them fast. We&apos;re
-                a lean, technical team based in Kentucky that punches well above
+                a lean, technical team based in New Jersey that punches well above
                 its weight.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted">
@@ -653,10 +653,10 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 border-t border-card-border pt-8 text-center text-sm text-muted/60">
-            &copy; {new Date().getFullYear()} TimmTech LLC. All rights reserved.
+            &copy; {new Date().getFullYear()} TimmTech Inc.. All rights reserved.
             <br />
             <span className="text-xs">
-              Based in Kentucky, United States
+              Based in New Jersey, United States
             </span>
           </div>
         </div>
