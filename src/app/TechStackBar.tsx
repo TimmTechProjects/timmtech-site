@@ -65,18 +65,19 @@ export default function TechStackBar() {
   }, []);
 
   return (
-    <section className="border-t border-card-border bg-card/30">
+    <section
+      ref={containerRef}
+      onMouseMove={handleMouseMove}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => { setIsHovering(false); setNearestIdx(-1); }}
+      className="relative border-t border-card-border bg-card/30 overflow-hidden"
+    >
       <div className="mx-auto max-w-6xl px-6 py-12">
-        <p className="mb-8 text-center text-sm font-medium uppercase tracking-widest text-muted">
+        <p className="mb-8 text-center text-sm font-medium uppercase tracking-widest text-muted relative z-10">
           Technologies We Work With
         </p>
-        <div
-          ref={containerRef}
-          onMouseMove={handleMouseMove}
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => { setIsHovering(false); setNearestIdx(-1); }}
-          className="relative py-4"
-        >
+        <div className="relative py-4">
+
           {/* Magnetic glow */}
           <div
             className="pointer-events-none absolute"
