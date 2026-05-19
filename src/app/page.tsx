@@ -357,9 +357,7 @@ export default function Home() {
 
             {/* PetListings */}
             <div className="card-hover gradient-border group overflow-hidden rounded-2xl border border-card-border bg-card/50 backdrop-blur-sm">
-              <div className="w-full h-48 bg-zinc-800 flex items-center justify-center rounded-t-2xl">
-                <Image src="/petlistings-logo.png" alt="PetListings" width={200} height={60} className="object-contain" />
-              </div>
+              <Image src="/petlistings-preview.jpg" alt="PetListings" width={800} height={420} className="w-full h-48 object-cover rounded-t-2xl" />
               <div className="p-6">
                 <div className="flex items-center gap-3">
                   <h3 className="text-xl font-bold">PetListings</h3>
