@@ -272,7 +272,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-16 grid gap-8 lg:grid-cols-3">
+          <div className="mt-16 grid gap-8 lg:grid-cols-2">
             {/* MyFloralVault */}
             <div className="card-hover gradient-border group overflow-hidden rounded-2xl border border-card-border bg-card/50 backdrop-blur-sm">
               <Image src="/mfv-preview.jpg" alt="MyFloralVault" width={800} height={420} className="w-full h-48 object-cover rounded-t-2xl" />
