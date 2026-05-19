@@ -72,29 +72,29 @@ export default function TechStackBar() {
       onMouseLeave={() => { setIsHovering(false); setNearestIdx(-1); }}
       className="relative border-t border-card-border bg-card/30 overflow-hidden"
     >
-      <div className="mx-auto max-w-6xl px-6 py-12">
-        <p className="mb-8 text-center text-sm font-medium uppercase tracking-widest text-muted relative z-10">
+      {/* Magnetic glow — positioned relative to section */}
+      <div
+        className="pointer-events-none absolute z-0"
+        style={{
+          left: glowPos.x - 120,
+          top: glowPos.y - 120,
+          width: 240,
+          height: 240,
+          borderRadius: "50%",
+          background: nearestIdx >= 0
+            ? "radial-gradient(circle, rgba(99,102,241,0.4) 0%, rgba(99,102,241,0.15) 30%, transparent 65%)"
+            : "radial-gradient(circle, rgba(99,102,241,0.2) 0%, rgba(99,102,241,0.05) 40%, transparent 70%)",
+          opacity: isHovering ? 1 : 0,
+          transition: "opacity 0.3s, background 0.15s",
+          filter: "blur(20px)",
+        }}
+      />
+
+      <div className="relative z-10 mx-auto max-w-6xl px-6 py-12">
+        <p className="mb-8 text-center text-sm font-medium uppercase tracking-widest text-muted">
           Technologies We Work With
         </p>
-        <div className="relative py-4">
-
-          {/* Magnetic glow */}
-          <div
-            className="pointer-events-none absolute"
-            style={{
-              left: glowPos.x - 100,
-              top: glowPos.y - 100,
-              width: 200,
-              height: 200,
-              borderRadius: "50%",
-              background: nearestIdx >= 0
-                ? "radial-gradient(circle, rgba(99,102,241,0.4) 0%, rgba(99,102,241,0.15) 30%, transparent 65%)"
-                : "radial-gradient(circle, rgba(99,102,241,0.2) 0%, rgba(99,102,241,0.05) 40%, transparent 70%)",
-              opacity: isHovering ? 1 : 0,
-              transition: "opacity 0.3s, background 0.15s",
-              filter: "blur(15px)",
-            }}
-          />
+        <div className="py-4">
 
           {/* Chips — original inline layout with separators */}
           <div className="relative flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-sm font-medium text-muted/70">
