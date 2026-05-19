@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -273,30 +275,7 @@ export default function Home() {
           <div className="mt-16 grid gap-8 lg:grid-cols-2">
             {/* MyFloralVault */}
             <div className="card-hover gradient-border group overflow-hidden rounded-2xl border border-card-border bg-card/50 backdrop-blur-sm lg:col-span-2">
-              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-emerald-500/20 via-green-500/10 to-teal-500/20 sm:h-56">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500/20 backdrop-blur-sm">
-                      <svg
-                        className="h-8 w-8 text-emerald-400"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={1.5}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M12 3c.5 0 6 4 6 9a6 6 0 11-12 0c0-5 5.5-9 6-9z"
-                        />
-                      </svg>
-                    </div>
-                    <p className="mt-3 text-sm font-medium text-emerald-300/80">
-                      Social Platform
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <Image src="/mfv-preview.jpg" alt="MyFloralVault" width={800} height={420} className="w-full h-48 object-cover rounded-t-2xl" />
               <div className="p-6">
                 <div className="flex items-center gap-3">
                   <h3 className="text-xl font-bold">MyFloralVault</h3>
@@ -351,7 +330,7 @@ export default function Home() {
                     Visit Website
                   </a>
                   <a
-                    href="https://apps.apple.com/app/my-floral-vault/id6744372521"
+                    href="https://apps.apple.com/us/app/myfloralvault/id6760265763"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 rounded-full border border-card-border bg-card px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-accent/30 hover:text-foreground cursor-pointer"
@@ -362,7 +341,7 @@ export default function Home() {
                     App Store
                   </a>
                   <a
-                    href="https://play.google.com/store/apps/details?id=com.mfv.myfloralvault"
+                    href="https://play.google.com/store/apps/details?id=com.timmtechprojects.mfvmobile"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 rounded-full border border-card-border bg-card px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-accent/30 hover:text-foreground cursor-pointer"
@@ -378,29 +357,8 @@ export default function Home() {
 
             {/* PetListings */}
             <div className="card-hover gradient-border group overflow-hidden rounded-2xl border border-card-border bg-card/50 backdrop-blur-sm">
-              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-amber-500/20 via-orange-500/10 to-yellow-500/20 sm:h-56">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-500/20 backdrop-blur-sm">
-                      <svg
-                        className="h-8 w-8 text-amber-400"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={1.5}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3.25a.75.75 0 01.75-.75 2.25 2.25 0 012.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904m-2.154 2v-6.75"
-                        />
-                      </svg>
-                    </div>
-                    <p className="mt-3 text-sm font-medium text-amber-300/80">
-                      Marketplace
-                    </p>
-                  </div>
-                </div>
+              <div className="w-full h-48 bg-zinc-800 flex items-center justify-center rounded-t-2xl">
+                <Image src="/petlistings-logo.png" alt="PetListings" width={200} height={60} className="object-contain" />
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-3">
@@ -451,29 +409,8 @@ export default function Home() {
 
             {/* Freedom Stairlifts Operations */}
             <div className="card-hover gradient-border group overflow-hidden rounded-2xl border border-card-border bg-card/50 backdrop-blur-sm">
-              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-blue-500/20 via-indigo-500/10 to-violet-500/20 sm:h-56">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-500/20 backdrop-blur-sm">
-                      <svg
-                        className="h-8 w-8 text-blue-400"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={1.5}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"
-                        />
-                      </svg>
-                    </div>
-                    <p className="mt-3 text-sm font-medium text-blue-300/80">
-                      Business Operations
-                    </p>
-                  </div>
-                </div>
+              <div className="w-full h-48 bg-gradient-to-br from-sky-900 to-blue-800 flex items-center justify-center rounded-t-2xl">
+                <span className="text-white text-2xl font-bold">Freedom Stairlifts</span>
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-3">
