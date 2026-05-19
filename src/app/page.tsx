@@ -272,7 +272,7 @@ export default function Home() {
 
           <div className="mt-16 grid gap-8 lg:grid-cols-2">
             {/* MyFloralVault */}
-            <div className="card-hover gradient-border group overflow-hidden rounded-2xl border border-card-border bg-card/50 backdrop-blur-sm">
+            <div className="card-hover gradient-border group overflow-hidden rounded-2xl border border-card-border bg-card/50 backdrop-blur-sm lg:col-span-2">
               <div className="relative h-48 overflow-hidden bg-gradient-to-br from-emerald-500/20 via-green-500/10 to-teal-500/20 sm:h-56">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
@@ -305,10 +305,10 @@ export default function Home() {
                   </span>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-muted">
-                  A social platform for plant enthusiasts to discover, identify,
-                  and share plants. Features AI-powered plant identification,
-                  community observations, a marketplace for buying and selling,
-                  and social features including reels, comments, and messaging.
+                  A social platform for plant enthusiasts &mdash; discover,
+                  collect, trade, and identify plants. Features community
+                  observations, marketplace, AI plant identification, and an
+                  herbal Apothecary.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <span className="rounded-md bg-card px-2 py-1 text-xs text-muted">
@@ -327,24 +327,129 @@ export default function Home() {
                     AI/ML
                   </span>
                 </div>
-                <div className="mt-4 flex items-center gap-4 text-xs text-muted">
-                  <span className="flex items-center gap-1.5">
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <span className="rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-medium text-emerald-400">
+                    iOS App
+                  </span>
+                  <span className="rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-medium text-emerald-400">
+                    Android App
+                  </span>
+                  <span className="rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-medium text-emerald-400">
+                    Web Platform
+                  </span>
+                </div>
+                <div className="mt-4 flex flex-wrap items-center gap-2">
+                  <a
+                    href="https://myfloralvault.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-full border border-card-border bg-card px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-accent/30 hover:text-foreground cursor-pointer"
+                  >
+                    <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                    Visit Website
+                  </a>
+                  <a
+                    href="https://apps.apple.com/app/my-floral-vault/id6744372521"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-full border border-card-border bg-card px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-accent/30 hover:text-foreground cursor-pointer"
+                  >
                     <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                     </svg>
                     App Store
-                  </span>
-                  <span className="flex items-center gap-1.5">
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.mfv.myfloralvault"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-full border border-card-border bg-card px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-accent/30 hover:text-foreground cursor-pointer"
+                  >
                     <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.832l2.545 1.463a1 1 0 010 1.738l-2.545 1.462-2.532-2.532 2.532-2.131zM5.864 2.658L16.8 9.99l-2.302 2.302-8.634-8.634z" />
                     </svg>
                     Google Play
-                  </span>
+                  </a>
                 </div>
               </div>
             </div>
 
-            {/* Enterprise Client Project */}
+            {/* PetListings */}
+            <div className="card-hover gradient-border group overflow-hidden rounded-2xl border border-card-border bg-card/50 backdrop-blur-sm">
+              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-amber-500/20 via-orange-500/10 to-yellow-500/20 sm:h-56">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-500/20 backdrop-blur-sm">
+                      <svg
+                        className="h-8 w-8 text-amber-400"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={1.5}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3.25a.75.75 0 01.75-.75 2.25 2.25 0 012.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904m-2.154 2v-6.75"
+                        />
+                      </svg>
+                    </div>
+                    <p className="mt-3 text-sm font-medium text-amber-300/80">
+                      Marketplace
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-3">
+                  <h3 className="text-xl font-bold">PetListings</h3>
+                  <span className="rounded-full bg-amber-500/10 px-2.5 py-0.5 text-xs font-medium text-amber-400">
+                    Live
+                  </span>
+                </div>
+                <p className="mt-3 text-sm leading-relaxed text-muted">
+                  A marketplace connecting pet breeders with buyers. Browse
+                  listings, filter by breed and location, and connect directly
+                  with verified breeders.
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <span className="rounded-md bg-card px-2 py-1 text-xs text-muted">
+                    Next.js
+                  </span>
+                  <span className="rounded-md bg-card px-2 py-1 text-xs text-muted">
+                    Node.js
+                  </span>
+                  <span className="rounded-md bg-card px-2 py-1 text-xs text-muted">
+                    PostgreSQL
+                  </span>
+                  <span className="rounded-md bg-card px-2 py-1 text-xs text-muted">
+                    Cloudflare
+                  </span>
+                </div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <span className="rounded-full bg-amber-500/10 px-2.5 py-0.5 text-xs font-medium text-amber-400">
+                    Web Platform
+                  </span>
+                </div>
+                <div className="mt-4 flex flex-wrap items-center gap-2">
+                  <a
+                    href="https://petlistings.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-full border border-card-border bg-card px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-accent/30 hover:text-foreground cursor-pointer"
+                  >
+                    <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                    Visit Website
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Freedom Stairlifts Operations */}
             <div className="card-hover gradient-border group overflow-hidden rounded-2xl border border-card-border bg-card/50 backdrop-blur-sm">
               <div className="relative h-48 overflow-hidden bg-gradient-to-br from-blue-500/20 via-indigo-500/10 to-violet-500/20 sm:h-56">
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -372,16 +477,15 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-3">
-                  <h3 className="text-xl font-bold">Service Operations Platform</h3>
+                  <h3 className="text-xl font-bold">Freedom Stairlifts Operations</h3>
                   <span className="rounded-full bg-blue-500/10 px-2.5 py-0.5 text-xs font-medium text-blue-400">
                     In Production
                   </span>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-muted">
-                  A scheduling and operations management platform for a
-                  service-based business. Integrates with third-party CRM APIs,
-                  handles automated job routing, customer communication, and
-                  real-time technician dispatch tracking.
+                  Internal CRM and service operations platform for a stairlift
+                  installation company. Manages scheduling, customer tracking,
+                  and field operations.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <span className="rounded-md bg-card px-2 py-1 text-xs text-muted">
@@ -397,22 +501,9 @@ export default function Home() {
                     Automation
                   </span>
                 </div>
-                <div className="mt-4 flex items-center gap-4 text-xs text-muted">
-                  <span className="flex items-center gap-1.5">
-                    <svg
-                      className="h-3.5 w-3.5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
-                      />
-                    </svg>
-                    Web Application
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <span className="rounded-full bg-blue-500/10 px-2.5 py-0.5 text-xs font-medium text-blue-400">
+                    Internal CRM
                   </span>
                 </div>
               </div>
@@ -448,7 +539,7 @@ export default function Home() {
               </p>
               <div className="mt-10 grid grid-cols-3 gap-8">
                 <div>
-                  <p className="text-3xl font-bold gradient-text">2+</p>
+                  <p className="text-3xl font-bold gradient-text">3+</p>
                   <p className="mt-1 text-sm text-muted">Years Shipping</p>
                 </div>
                 <div>
@@ -513,7 +604,7 @@ export default function Home() {
           <div className="mx-auto mt-12 max-w-lg">
             <div className="rounded-2xl border border-card-border bg-card/50 p-8 backdrop-blur-sm">
               <form
-                action="mailto:contact@timmtech.co"
+                action="mailto:timmtechprojects@gmail.com"
                 method="post"
                 encType="text/plain"
                 className="space-y-5"
@@ -587,10 +678,10 @@ export default function Home() {
                 <span>
                   Or email us directly at{" "}
                   <a
-                    href="mailto:contact@timmtech.co"
+                    href="mailto:timmtechprojects@gmail.com"
                     className="text-accent hover:text-accent-light"
                   >
-                    contact@timmtech.co
+                    timmtechprojects@gmail.com
                   </a>
                 </span>
               </div>
