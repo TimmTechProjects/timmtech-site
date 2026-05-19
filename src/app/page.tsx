@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TechStackBar from "./TechStackBar";
 
 export default function Home() {
   return (
@@ -230,32 +231,7 @@ export default function Home() {
       </section>
 
       {/* Tech Stack Bar */}
-      <section className="border-t border-card-border bg-card/30">
-        <div className="mx-auto max-w-6xl px-6 py-12">
-          <p className="mb-8 text-center text-sm font-medium uppercase tracking-widest text-muted">
-            Technologies We Work With
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-sm font-medium text-muted/70">
-            <span>React Native</span>
-            <span className="hidden text-card-border sm:inline">|</span>
-            <span>Expo</span>
-            <span className="hidden text-card-border sm:inline">|</span>
-            <span>Next.js</span>
-            <span className="hidden text-card-border sm:inline">|</span>
-            <span>TypeScript</span>
-            <span className="hidden text-card-border sm:inline">|</span>
-            <span>Node.js</span>
-            <span className="hidden text-card-border sm:inline">|</span>
-            <span>PostgreSQL</span>
-            <span className="hidden text-card-border sm:inline">|</span>
-            <span>AWS</span>
-            <span className="hidden text-card-border sm:inline">|</span>
-            <span>Cloudflare</span>
-            <span className="hidden text-card-border sm:inline">|</span>
-            <span>Tailwind CSS</span>
-          </div>
-        </div>
-      </section>
+      <TechStackBar />
 
       {/* Portfolio / Work */}
       <section id="work" className="relative border-t border-card-border">
